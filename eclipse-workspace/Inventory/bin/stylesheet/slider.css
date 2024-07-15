@@ -1,0 +1,18 @@
+.header{
+	-fx-background-color : #ffa8B6
+}
+.header2{
+	-fx-background-color : #ffffff
+}
+.button{
+	-fx-background-color : rgba(0,0,0,0);
+}
+.menubar:hover{
+	-fx-border-color : #660099;
+	-fx-border-width : 0.0px 0.0px 3px 0.0px ;
+}
+.sizebar:hover{
+	-fx-background-color : #9df9ef;
+	-fx-border-color : #ffffff;
+	-fx-border-width : 0.0px 0.0px 3px 0.0px ;
+}

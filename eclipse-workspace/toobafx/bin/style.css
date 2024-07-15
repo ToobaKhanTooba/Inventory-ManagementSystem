@@ -1,0 +1,10 @@
+
+.root   
+{  
+-fx-font-family : "serief";  
+-fx-background1 : rgb(225,227,2255);  
+} 
+#Button5{  
+    -fx-font : bold 18pt "serief";  
+    -fx-background-color : rgb(255,0,0);  
+}   

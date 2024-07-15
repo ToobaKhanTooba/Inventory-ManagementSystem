@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane fx:id="bp" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.menu">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#radio" text="radio" />
+                  <MenuItem mnemonicParsing="false" onAction="#radio_select" text="radio_select" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="CHECK">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#Check" text="Check" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <Pane prefHeight="665.0" prefWidth="312.0" BorderPane.alignment="CENTER">
+         <children>   
+         <BorderPane prefHeight="400.0" prefWidth="600.0" styleClass="shadow" stylesheets="@view.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="44.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="42.0" layoutX="14.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../OneDrive/Pictures/Saved%20Pictures/ADRC_logo.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="28.0" fitWidth="27.0" layoutX="552.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../OneDrive/Pictures/Saved%20Pictures/close.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="28.0" fitWidth="27.0" layoutX="509.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../OneDrive/Pictures/Saved%20Pictures/minimize.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="LEFT">
+                     <children>
+                        <ImageView fitHeight="96.0" fitWidth="103.0" layoutX="49.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../OneDrive/Pictures/Saved%20Pictures/ADRC_logo.jpg" />
+                           </image>
+                        </ImageView>
+                        <Line endX="100.0" layoutX="68.0" layoutY="207.0" startX="-35.5" />
+                        <Button fx:id="B1" layoutX="33.0" layoutY="229.0" mnemonicParsing="false" onAction="#print" prefHeight="30.0" prefWidth="128.0" styleClass="B1" stylesheets="@view.css" text="Issue" />
+                        <Label layoutX="14.0" layoutY="152.0" prefHeight="26.0" prefWidth="173.0" styleClass="l1" stylesheets="@view.css" text="Welcome to ADRC" />
+                        <Button fx:id="B2" layoutX="33.0" layoutY="267.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="128.0" styleClass="B1" stylesheets="@view.css" text="Search" />
+                        <Button layoutX="33.0" layoutY="305.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="128.0" styleClass="B1" stylesheets="@view.css" text="View" />
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="274.0" prefWidth="400.0" styleClass="whitebg" stylesheets="@view.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="11.0" layoutY="14.0" prefHeight="100.0" prefWidth="374.0" style="-fx-background-color: #000000;" styleClass="whitebg" stylesheets="@view.css">
+                           <children>
+                              <Label layoutX="213.0" layoutY="50.0" prefHeight="35.0" prefWidth="161.0" style="-fx-text-fill: #ffffff;" styleClass="l1" stylesheets="@view.css" text="No.of Defaulters" textAlignment="CENTER" />
+                              <Label layoutX="29.0" layoutY="39.0" style="-fx-text-fill: #ffffff; -fx-font-size: 30;" styleClass="l1" stylesheets="@view.css" text="00" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="11.0" layoutY="127.0" prefHeight="102.0" prefWidth="376.0" style="-fx-background-color: #000000;" styleClass="whitebg" stylesheets="@view.css">
+                           <children>
+                              <Label layoutX="161.0" layoutY="51.0" prefHeight="35.0" prefWidth="201.0" style="-fx-text-fill: #ffffff;" styleClass="l1" stylesheets="@view.css" text="Items issued in total" textAlignment="CENTER" />
+                              <Label layoutX="33.0" fx:id="l1" layoutY="41.0" style="-fx-text-fill: #ffffff; -fx-font-size: 30;" styleClass="l1" stylesheets="@view.css" text="00" />
+                           </children></AnchorPane>
+                        <AnchorPane layoutX="12.0" layoutY="240.0" prefHeight="102.0" prefWidth="376.0" style="-fx-background-color: #000000;" styleClass="whitebg" stylesheets="@view.css">
+                           <children>
+                              <Label layoutX="146.0" layoutY="44.0" prefHeight="35.0" prefWidth="228.0" style="-fx-text-fill: #ffffff;" styleClass="l1" stylesheets="@view.css" text="Items returned this week" textAlignment="CENTER" />
+                              <Label layoutX="35.0" layoutY="44.0" style="-fx-text-fill: #ffffff; -fx-font-size: 30;" styleClass="l1" stylesheets="@view.css" text="00" />
+                           </children></AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+               </children>
+      </Pane>
+   </left>
+</BorderPane>

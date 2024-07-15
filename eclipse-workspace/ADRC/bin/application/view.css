@@ -1,0 +1,21 @@
+.l1{
+	-fx-font-style:Tahoma;
+	-fx-font-size:20;
+	-fx-font-style:Bold;
+}
+.l2{
+	-fx-font-style:Tahoma;
+	-fx-font-size:14;
+	-fx-font-style:Bold;
+}
+.B1{
+	-fx-background-color:#000000;
+	-fx-text-fill:#FFFFFF;
+}
+.shadow{
+	-fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.5),6,0,0,0);
+	}
+	.whitebg{
+		-fx-background-color:#fff;
+		-fx-background-radius:8px;
+	}

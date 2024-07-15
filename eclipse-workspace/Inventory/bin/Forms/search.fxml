@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="672.0" style="-fx-background-color: #f5f5f5;" stylesheets="@../Views/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.search">
+   <children>
+      <TextField fx:id="t1" layoutX="154.0" layoutY="66.0" prefHeight="34.0" prefWidth="345.0" promptText="Type here to search" style="-fx-background-radius: 25px; -fx-background-color: #ffffff;" styleClass="shadow" stylesheets="@../Views/style.css">
+         <font>
+            <Font name="Footlight MT Light" size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="439.0" layoutY="72.0" mnemonicParsing="false" onAction="#sea" style="-fx-background-radius: 25px; -fx-background-color: #00FFFF;" text="Search">
+         <font>
+            <Font name="Footlight MT Light" size="12.0" />
+         </font>
+      </Button>
+      <Pane layoutY="-8.0" prefHeight="45.0" prefWidth="672.0" style="-fx-background-color: #D3D3D3;" stylesheets="@../Views/style.css" AnchorPane.bottomAnchor="407.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-8.0">
+         <children>
+            <Label layoutX="300.0" layoutY="9.0" stylesheets="@../Views/style.css" text="Inventory">
+               <font>
+                  <Font name="Footlight MT Light" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="exit" fitHeight="25.0" fitWidth="25.0" layoutX="633.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/exit2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TableView fx:id="table" layoutY="130.0" prefHeight="314.0" prefWidth="672.0" style="-fx-background-color: #f5f5f5; -fx-border-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="130.0">
+         <columns>
+            <TableColumn fx:id="sno" prefWidth="75.0" text="Sno." />
+            <TableColumn fx:id="item" prefWidth="75.0" text="Item" />
+            <TableColumn fx:id="type" prefWidth="100.0" text="Item_type" />
+            <TableColumn fx:id="price" prefWidth="82.0" text="Price" />
+            <TableColumn fx:id="quantity" prefWidth="102.0" text="Total" />
+         </columns></TableView>
+   </children>
+</AnchorPane>

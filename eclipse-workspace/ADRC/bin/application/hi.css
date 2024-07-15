@@ -1,0 +1,12 @@
+.label{
+-fx-font-size:18;
+
+-fx-font-family:Tahoma 17px;
+}
+
+.B1 {  
+    -fx-font : 14px "serief";  
+    -fx-padding : 10;  
+    -fx-background-color : #000000;  
+    -fx-font-color:#FFFFFF;
+}   

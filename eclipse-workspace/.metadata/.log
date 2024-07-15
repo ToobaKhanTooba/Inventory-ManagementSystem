@@ -1,0 +1,1868 @@
+!SESSION 2024-02-09 16:15:50.660 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+This is a continuation of log file C:\Users\HP\eclipse-workspace\.metadata\.bak_2.log
+Created Time: 2024-02-09 16:52:53.733
+
+!ENTRY org.apache.log4j 4 0 2024-02-09 16:52:53.733
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - java.lang.reflect.InvocationTargetException
+
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:139)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:51)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:36)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:34)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:83)
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.configure(AbstractFXGraphRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:160)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:107)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.createInjector(FXGraphActivator.java:67)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.getInjector(FXGraphActivator.java:55)
+	at org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory.getInjector(FXGraphExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:54)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:265)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:393)
+	at org.eclipse.ui.internal.genericeditor.markers.MarkerInformationControl.setInput(MarkerInformationControl.java:107)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:137)
+	... 58 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/annotations/validation/UnresolvedAnnotationTypeAwareMessageProducer
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.bindILinkingDiagnosticMessageProvider(AbstractFXGraphRuntimeModule.java:274)
+	... 63 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.annotations.validation.UnresolvedAnnotationTypeAwareMessageProducer cannot be found by org.eclipse.fx.ide.fxgraph_1.2.0.201501301049
+	... 64 more
+
+!ENTRY org.apache.log4j 4 0 2024-02-09 16:52:54.098
+!MESSAGE org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator  - Failed to create injector for org.eclipse.fx.ide.fxgraph.FXGraph
+
+
+!ENTRY org.apache.log4j 4 0 2024-02-09 16:52:54.099
+!MESSAGE org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator  - Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for EclipseSourceFolderProvider was bound.
+
+Requested by:
+1  : XbaseHoverDocumentationProvider.sourceFolderProvider(XbaseHoverDocumentationProvider.java:89)
+      \_ for field sourceFolderProvider
+     at MethodBasedModule.configure(MethodBasedModule.java:58)
+      \_ installed by: Modules$OverrideModule -> FXGraphUiModule
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+1 error
+
+======================
+Full classname legend:
+======================
+EclipseSourceFolderProvider:     "org.eclipse.xtext.builder.EclipseSourceFolderProvider"
+FXGraphUiModule:                 "org.eclipse.fx.ide.fxgraph.ui.FXGraphUiModule"
+MethodBasedModule:               "org.eclipse.xtext.service.MethodBasedModule"
+Modules$OverrideModule:          "com.google.inject.util.Modules$OverrideModule"
+XbaseHoverDocumentationProvider: "org.eclipse.xtext.xbase.ui.hover.XbaseHoverDocumentationProvider"
+========================
+End of classname legend:
+========================
+
+
+!STACK 0
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for EclipseSourceFolderProvider was bound.
+
+Requested by:
+1  : XbaseHoverDocumentationProvider.sourceFolderProvider(XbaseHoverDocumentationProvider.java:89)
+      \_ for field sourceFolderProvider
+     at MethodBasedModule.configure(MethodBasedModule.java:58)
+      \_ installed by: Modules$OverrideModule -> FXGraphUiModule
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+1 error
+
+======================
+Full classname legend:
+======================
+EclipseSourceFolderProvider:     "org.eclipse.xtext.builder.EclipseSourceFolderProvider"
+FXGraphUiModule:                 "org.eclipse.fx.ide.fxgraph.ui.FXGraphUiModule"
+MethodBasedModule:               "org.eclipse.xtext.service.MethodBasedModule"
+Modules$OverrideModule:          "com.google.inject.util.Modules$OverrideModule"
+XbaseHoverDocumentationProvider: "org.eclipse.xtext.xbase.ui.hover.XbaseHoverDocumentationProvider"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:568)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:163)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.createInjector(FXGraphActivator.java:67)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.getInjector(FXGraphActivator.java:55)
+	at org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory.getInjector(FXGraphExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:54)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:265)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:393)
+	at org.eclipse.ui.internal.genericeditor.markers.MarkerInformationControl.setInput(MarkerInformationControl.java:107)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.apache.log4j 4 0 2024-02-09 16:54:17.770
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - java.lang.reflect.InvocationTargetException
+
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:139)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:51)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:36)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:34)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:83)
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.configure(AbstractFXGraphRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:160)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:107)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.createInjector(FXGraphActivator.java:67)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.getInjector(FXGraphActivator.java:55)
+	at org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory.getInjector(FXGraphExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:54)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:265)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:393)
+	at org.eclipse.ui.internal.genericeditor.markers.MarkerInformationControl.setInput(MarkerInformationControl.java:107)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:137)
+	... 58 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/file/FileLocationsImpl
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.bindFileLocations(AbstractFXGraphRuntimeModule.java:254)
+	... 63 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.file.FileLocationsImpl cannot be found by org.eclipse.fx.ide.fxgraph_1.2.0.201501301049
+	... 64 more
+
+!ENTRY org.apache.log4j 4 0 2024-02-09 16:54:17.775
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - java.lang.reflect.InvocationTargetException
+
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:139)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:51)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:36)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:34)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:83)
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.configure(AbstractFXGraphRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:160)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:107)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.createInjector(FXGraphActivator.java:67)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.getInjector(FXGraphActivator.java:55)
+	at org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory.getInjector(FXGraphExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:54)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:265)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:393)
+	at org.eclipse.ui.internal.genericeditor.markers.MarkerInformationControl.setInput(MarkerInformationControl.java:107)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:137)
+	... 58 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/file/JavaIOFileSystemSupport
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.bindMutableFileSystemSupport(AbstractFXGraphRuntimeModule.java:249)
+	... 63 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.file.JavaIOFileSystemSupport cannot be found by org.eclipse.fx.ide.fxgraph_1.2.0.201501301049
+	... 64 more
+
+!ENTRY org.apache.log4j 4 0 2024-02-09 16:54:17.779
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - Type org.eclipse.xtext.xbase.file.WorkspaceConfig not present
+
+!STACK 0
+java.lang.TypeNotPresentException: Type org.eclipse.xtext.xbase.file.WorkspaceConfig not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.reflectiveObjects.LazyReflectiveObjectGenerator.reifyBounds(LazyReflectiveObjectGenerator.java:65)
+	at java.base/sun.reflect.generics.reflectiveObjects.WildcardTypeImpl.getUpperBounds(WildcardTypeImpl.java:105)
+	at org.eclipse.xtext.service.MethodBasedModule.getFirstTypeParameter(MethodBasedModule.java:109)
+	at org.eclipse.xtext.service.MethodBasedModule.getKeyType(MethodBasedModule.java:100)
+	at org.eclipse.xtext.service.ProviderModule.getKeyType(ProviderModule.java:40)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:49)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:36)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:34)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:83)
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.configure(AbstractFXGraphRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:160)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:107)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.createInjector(FXGraphActivator.java:67)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.getInjector(FXGraphActivator.java:55)
+	at org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory.getInjector(FXGraphExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:54)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:265)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:393)
+	at org.eclipse.ui.internal.genericeditor.markers.MarkerInformationControl.setInput(MarkerInformationControl.java:107)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.file.WorkspaceConfig cannot be found by org.eclipse.fx.ide.fxgraph_1.2.0.201501301049
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 68 more
+
+!ENTRY org.apache.log4j 4 0 2024-02-09 16:54:17.781
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - java.lang.reflect.InvocationTargetException
+
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:139)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:51)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:36)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:34)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:83)
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.configure(AbstractFXGraphRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:160)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:107)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.createInjector(FXGraphActivator.java:67)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.getInjector(FXGraphActivator.java:55)
+	at org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory.getInjector(FXGraphExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:54)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:265)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:393)
+	at org.eclipse.ui.internal.genericeditor.markers.MarkerInformationControl.setInput(MarkerInformationControl.java:107)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:137)
+	... 58 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/annotations/validation/UnresolvedAnnotationTypeAwareMessageProducer
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.bindILinkingDiagnosticMessageProvider(AbstractFXGraphRuntimeModule.java:274)
+	... 63 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.annotations.validation.UnresolvedAnnotationTypeAwareMessageProducer cannot be found by org.eclipse.fx.ide.fxgraph_1.2.0.201501301049
+	... 64 more
+
+!ENTRY org.apache.log4j 4 0 2024-02-09 16:54:17.873
+!MESSAGE org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator  - Failed to create injector for org.eclipse.fx.ide.fxgraph.FXGraph
+
+
+!ENTRY org.apache.log4j 4 0 2024-02-09 16:54:17.876
+!MESSAGE org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator  - Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for EclipseSourceFolderProvider was bound.
+
+Requested by:
+1  : XbaseHoverDocumentationProvider.sourceFolderProvider(XbaseHoverDocumentationProvider.java:89)
+      \_ for field sourceFolderProvider
+     at MethodBasedModule.configure(MethodBasedModule.java:58)
+      \_ installed by: Modules$OverrideModule -> FXGraphUiModule
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+1 error
+
+======================
+Full classname legend:
+======================
+EclipseSourceFolderProvider:     "org.eclipse.xtext.builder.EclipseSourceFolderProvider"
+FXGraphUiModule:                 "org.eclipse.fx.ide.fxgraph.ui.FXGraphUiModule"
+MethodBasedModule:               "org.eclipse.xtext.service.MethodBasedModule"
+Modules$OverrideModule:          "com.google.inject.util.Modules$OverrideModule"
+XbaseHoverDocumentationProvider: "org.eclipse.xtext.xbase.ui.hover.XbaseHoverDocumentationProvider"
+========================
+End of classname legend:
+========================
+
+
+!STACK 0
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for EclipseSourceFolderProvider was bound.
+
+Requested by:
+1  : XbaseHoverDocumentationProvider.sourceFolderProvider(XbaseHoverDocumentationProvider.java:89)
+      \_ for field sourceFolderProvider
+     at MethodBasedModule.configure(MethodBasedModule.java:58)
+      \_ installed by: Modules$OverrideModule -> FXGraphUiModule
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+1 error
+
+======================
+Full classname legend:
+======================
+EclipseSourceFolderProvider:     "org.eclipse.xtext.builder.EclipseSourceFolderProvider"
+FXGraphUiModule:                 "org.eclipse.fx.ide.fxgraph.ui.FXGraphUiModule"
+MethodBasedModule:               "org.eclipse.xtext.service.MethodBasedModule"
+Modules$OverrideModule:          "com.google.inject.util.Modules$OverrideModule"
+XbaseHoverDocumentationProvider: "org.eclipse.xtext.xbase.ui.hover.XbaseHoverDocumentationProvider"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:568)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:163)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.createInjector(FXGraphActivator.java:67)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.getInjector(FXGraphActivator.java:55)
+	at org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory.getInjector(FXGraphExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:54)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:265)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:393)
+	at org.eclipse.ui.internal.genericeditor.markers.MarkerInformationControl.setInput(MarkerInformationControl.java:107)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.apache.log4j 4 0 2024-02-09 16:54:18.444
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - java.lang.reflect.InvocationTargetException
+
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:139)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:51)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:36)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:34)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:83)
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.configure(AbstractFXGraphRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:160)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:107)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.createInjector(FXGraphActivator.java:67)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.getInjector(FXGraphActivator.java:55)
+	at org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory.getInjector(FXGraphExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:54)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:265)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:393)
+	at org.eclipse.ui.internal.genericeditor.markers.MarkerInformationControl.setInput(MarkerInformationControl.java:107)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:137)
+	... 58 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/file/FileLocationsImpl
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.bindFileLocations(AbstractFXGraphRuntimeModule.java:254)
+	... 63 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.file.FileLocationsImpl cannot be found by org.eclipse.fx.ide.fxgraph_1.2.0.201501301049
+	... 64 more
+
+!ENTRY org.apache.log4j 4 0 2024-02-09 16:54:18.448
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - java.lang.reflect.InvocationTargetException
+
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:139)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:51)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:36)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:34)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:83)
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.configure(AbstractFXGraphRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:160)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:107)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.createInjector(FXGraphActivator.java:67)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.getInjector(FXGraphActivator.java:55)
+	at org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory.getInjector(FXGraphExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:54)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:265)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:393)
+	at org.eclipse.ui.internal.genericeditor.markers.MarkerInformationControl.setInput(MarkerInformationControl.java:107)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:137)
+	... 58 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/file/JavaIOFileSystemSupport
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.bindMutableFileSystemSupport(AbstractFXGraphRuntimeModule.java:249)
+	... 63 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.file.JavaIOFileSystemSupport cannot be found by org.eclipse.fx.ide.fxgraph_1.2.0.201501301049
+	... 64 more
+
+!ENTRY org.apache.log4j 4 0 2024-02-09 16:54:18.453
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - Type org.eclipse.xtext.xbase.file.WorkspaceConfig not present
+
+!STACK 0
+java.lang.TypeNotPresentException: Type org.eclipse.xtext.xbase.file.WorkspaceConfig not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.reflectiveObjects.LazyReflectiveObjectGenerator.reifyBounds(LazyReflectiveObjectGenerator.java:65)
+	at java.base/sun.reflect.generics.reflectiveObjects.WildcardTypeImpl.getUpperBounds(WildcardTypeImpl.java:105)
+	at org.eclipse.xtext.service.MethodBasedModule.getFirstTypeParameter(MethodBasedModule.java:109)
+	at org.eclipse.xtext.service.MethodBasedModule.getKeyType(MethodBasedModule.java:100)
+	at org.eclipse.xtext.service.ProviderModule.getKeyType(ProviderModule.java:40)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:49)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:36)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:34)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:83)
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.configure(AbstractFXGraphRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:160)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:107)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.createInjector(FXGraphActivator.java:67)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.getInjector(FXGraphActivator.java:55)
+	at org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory.getInjector(FXGraphExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:54)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:265)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:393)
+	at org.eclipse.ui.internal.genericeditor.markers.MarkerInformationControl.setInput(MarkerInformationControl.java:107)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.file.WorkspaceConfig cannot be found by org.eclipse.fx.ide.fxgraph_1.2.0.201501301049
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 68 more
+
+!ENTRY org.apache.log4j 4 0 2024-02-09 16:54:18.457
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - java.lang.reflect.InvocationTargetException
+
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:139)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:51)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:36)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:34)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:83)
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.configure(AbstractFXGraphRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:160)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:107)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.createInjector(FXGraphActivator.java:67)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.getInjector(FXGraphActivator.java:55)
+	at org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory.getInjector(FXGraphExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:54)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:265)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:393)
+	at org.eclipse.ui.internal.genericeditor.markers.MarkerInformationControl.setInput(MarkerInformationControl.java:107)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:137)
+	... 58 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/annotations/validation/UnresolvedAnnotationTypeAwareMessageProducer
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.bindILinkingDiagnosticMessageProvider(AbstractFXGraphRuntimeModule.java:274)
+	... 63 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.annotations.validation.UnresolvedAnnotationTypeAwareMessageProducer cannot be found by org.eclipse.fx.ide.fxgraph_1.2.0.201501301049
+	... 64 more
+
+!ENTRY org.apache.log4j 4 0 2024-02-09 16:54:18.523
+!MESSAGE org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator  - Failed to create injector for org.eclipse.fx.ide.fxgraph.FXGraph
+
+
+!ENTRY org.apache.log4j 4 0 2024-02-09 16:54:18.525
+!MESSAGE org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator  - Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for EclipseSourceFolderProvider was bound.
+
+Requested by:
+1  : XbaseHoverDocumentationProvider.sourceFolderProvider(XbaseHoverDocumentationProvider.java:89)
+      \_ for field sourceFolderProvider
+     at MethodBasedModule.configure(MethodBasedModule.java:58)
+      \_ installed by: Modules$OverrideModule -> FXGraphUiModule
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+1 error
+
+======================
+Full classname legend:
+======================
+EclipseSourceFolderProvider:     "org.eclipse.xtext.builder.EclipseSourceFolderProvider"
+FXGraphUiModule:                 "org.eclipse.fx.ide.fxgraph.ui.FXGraphUiModule"
+MethodBasedModule:               "org.eclipse.xtext.service.MethodBasedModule"
+Modules$OverrideModule:          "com.google.inject.util.Modules$OverrideModule"
+XbaseHoverDocumentationProvider: "org.eclipse.xtext.xbase.ui.hover.XbaseHoverDocumentationProvider"
+========================
+End of classname legend:
+========================
+
+
+!STACK 0
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for EclipseSourceFolderProvider was bound.
+
+Requested by:
+1  : XbaseHoverDocumentationProvider.sourceFolderProvider(XbaseHoverDocumentationProvider.java:89)
+      \_ for field sourceFolderProvider
+     at MethodBasedModule.configure(MethodBasedModule.java:58)
+      \_ installed by: Modules$OverrideModule -> FXGraphUiModule
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+1 error
+
+======================
+Full classname legend:
+======================
+EclipseSourceFolderProvider:     "org.eclipse.xtext.builder.EclipseSourceFolderProvider"
+FXGraphUiModule:                 "org.eclipse.fx.ide.fxgraph.ui.FXGraphUiModule"
+MethodBasedModule:               "org.eclipse.xtext.service.MethodBasedModule"
+Modules$OverrideModule:          "com.google.inject.util.Modules$OverrideModule"
+XbaseHoverDocumentationProvider: "org.eclipse.xtext.xbase.ui.hover.XbaseHoverDocumentationProvider"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:568)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:163)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.createInjector(FXGraphActivator.java:67)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.getInjector(FXGraphActivator.java:55)
+	at org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory.getInjector(FXGraphExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:54)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:265)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:393)
+	at org.eclipse.ui.internal.genericeditor.markers.MarkerInformationControl.setInput(MarkerInformationControl.java:107)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-09 16:54:39.294
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-02-09 16:54:39.301
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2024-02-23 15:32:28.281 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-23 15:32:31.490
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.fx.ide.java6 4 0 2024-02-23 15:32:32.679
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.java6 [474]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version>=1.3)(!(version>=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY ch.qos.logback.classic 1 0 2024-02-23 15:32:38.706
+!MESSAGE Logback config file: C:\Users\HP\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-02-23 15:32:51.428
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-02-23 15:32:51.428
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-02-23 15:32:51.428
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-02-23 15:32:58.769
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-03-15 15:57:20.540 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-03-15 15:57:23.569
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.fx.ide.java6 4 0 2024-03-15 15:57:24.791
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.java6 [474]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version>=1.3)(!(version>=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY ch.qos.logback.classic 1 0 2024-03-15 15:57:31.797
+!MESSAGE Logback config file: C:\Users\HP\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-03-15 15:57:46.910
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-03-15 15:57:46.910
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-03-15 15:57:46.910
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-03-15 15:57:52.483
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-03-30 16:39:50.476 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-03-30 16:39:53.572
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.fx.ide.java6 4 0 2024-03-30 16:39:54.696
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.java6 [474]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version>=1.3)(!(version>=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY ch.qos.logback.classic 1 0 2024-03-30 16:40:01.053
+!MESSAGE Logback config file: C:\Users\HP\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-03-30 16:40:12.903
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-03-30 16:40:12.903
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-03-30 16:40:12.903
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-03-30 16:40:18.841
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-07-07 20:28:38.155 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-07 20:28:41.269
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.fx.ide.java6 4 0 2024-07-07 20:28:42.609
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.java6 [474]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version>=1.3)(!(version>=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-07 20:28:48.464
+!MESSAGE Logback config file: C:\Users\HP\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-07-07 20:29:04.681
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-07-07 20:29:04.681
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-07-07 20:29:04.681
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-07-07 20:29:12.175
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.apache.log4j 4 0 2024-07-07 20:29:56.114
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - java.lang.reflect.InvocationTargetException
+
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:139)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:51)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:36)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:34)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:83)
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.configure(AbstractFXGraphRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:160)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:107)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.createInjector(FXGraphActivator.java:67)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.getInjector(FXGraphActivator.java:55)
+	at org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory.getInjector(FXGraphExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:54)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:265)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.initDelegate(RegistryBuilderParticipant.java:185)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:176)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:171)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.build(RegistryBuilderParticipant.java:164)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant.build(RegistryBuilderParticipant.java:70)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.doBuild(XtextBuilder.java:525)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.addInfosFromTaskAndBuild(XtextBuilder.java:455)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.fullBuild(XtextBuilder.java:562)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.build(XtextBuilder.java:333)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:354)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:616)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:571)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:609)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:121)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.lambda$0(LaunchConfigurationDelegate.java:406)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2400)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:122)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:781)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:137)
+	... 58 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/file/FileLocationsImpl
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.bindFileLocations(AbstractFXGraphRuntimeModule.java:254)
+	... 63 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.file.FileLocationsImpl cannot be found by org.eclipse.fx.ide.fxgraph_1.2.0.201501301049
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 64 more
+
+!ENTRY org.apache.log4j 4 0 2024-07-07 20:29:56.179
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - Type org.eclipse.xtext.xbase.file.WorkspaceConfig not present
+
+!STACK 0
+java.lang.TypeNotPresentException: Type org.eclipse.xtext.xbase.file.WorkspaceConfig not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.reflectiveObjects.LazyReflectiveObjectGenerator.reifyBounds(LazyReflectiveObjectGenerator.java:65)
+	at java.base/sun.reflect.generics.reflectiveObjects.WildcardTypeImpl.getUpperBounds(WildcardTypeImpl.java:105)
+	at org.eclipse.xtext.service.MethodBasedModule.getFirstTypeParameter(MethodBasedModule.java:109)
+	at org.eclipse.xtext.service.MethodBasedModule.getKeyType(MethodBasedModule.java:100)
+	at org.eclipse.xtext.service.ProviderModule.getKeyType(ProviderModule.java:40)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:49)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:36)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:34)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:83)
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.configure(AbstractFXGraphRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:160)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:107)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.createInjector(FXGraphActivator.java:67)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.getInjector(FXGraphActivator.java:55)
+	at org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory.getInjector(FXGraphExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:54)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:265)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.initDelegate(RegistryBuilderParticipant.java:185)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:176)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:171)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.build(RegistryBuilderParticipant.java:164)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant.build(RegistryBuilderParticipant.java:70)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.doBuild(XtextBuilder.java:525)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.addInfosFromTaskAndBuild(XtextBuilder.java:455)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.fullBuild(XtextBuilder.java:562)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.build(XtextBuilder.java:333)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:354)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:616)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:571)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:609)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:121)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.lambda$0(LaunchConfigurationDelegate.java:406)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2400)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:122)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:781)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.file.WorkspaceConfig cannot be found by org.eclipse.fx.ide.fxgraph_1.2.0.201501301049
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 68 more
+
+!ENTRY org.apache.log4j 4 0 2024-07-07 20:29:56.183
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - java.lang.reflect.InvocationTargetException
+
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:139)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:51)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:36)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:34)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:83)
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.configure(AbstractFXGraphRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:160)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:107)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.createInjector(FXGraphActivator.java:67)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.getInjector(FXGraphActivator.java:55)
+	at org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory.getInjector(FXGraphExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:54)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:265)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.initDelegate(RegistryBuilderParticipant.java:185)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:176)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:171)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.build(RegistryBuilderParticipant.java:164)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant.build(RegistryBuilderParticipant.java:70)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.doBuild(XtextBuilder.java:525)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.addInfosFromTaskAndBuild(XtextBuilder.java:455)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.fullBuild(XtextBuilder.java:562)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.build(XtextBuilder.java:333)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:354)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:616)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:571)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:609)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:121)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.lambda$0(LaunchConfigurationDelegate.java:406)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2400)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:122)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:781)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:137)
+	... 58 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/file/JavaIOFileSystemSupport
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.bindMutableFileSystemSupport(AbstractFXGraphRuntimeModule.java:249)
+	... 63 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.file.JavaIOFileSystemSupport cannot be found by org.eclipse.fx.ide.fxgraph_1.2.0.201501301049
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 64 more
+
+!ENTRY org.apache.log4j 4 0 2024-07-07 20:29:56.210
+!MESSAGE org.eclipse.xtext.service.CompoundModule  - java.lang.reflect.InvocationTargetException
+
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:139)
+	at org.eclipse.xtext.service.MethodBasedModule.configure(MethodBasedModule.java:51)
+	at org.eclipse.xtext.service.CompoundModule.configure(CompoundModule.java:36)
+	at org.eclipse.xtext.service.AbstractGenericModule.configure(AbstractGenericModule.java:34)
+	at org.eclipse.xtext.service.DefaultRuntimeModule.configure(DefaultRuntimeModule.java:83)
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.configure(AbstractFXGraphRuntimeModule.java:25)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.util.Modules$OverrideModule.configure(Modules.java:214)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:64)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:409)
+	at com.google.inject.spi.Elements.getElements(Elements.java:108)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:160)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:107)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.createInjector(FXGraphActivator.java:67)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.getInjector(FXGraphActivator.java:55)
+	at org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory.getInjector(FXGraphExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:54)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:265)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.initDelegate(RegistryBuilderParticipant.java:185)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:176)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:171)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.build(RegistryBuilderParticipant.java:164)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant.build(RegistryBuilderParticipant.java:70)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.doBuild(XtextBuilder.java:525)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.addInfosFromTaskAndBuild(XtextBuilder.java:455)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.fullBuild(XtextBuilder.java:562)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.build(XtextBuilder.java:333)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:354)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:616)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:571)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:609)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:121)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.lambda$0(LaunchConfigurationDelegate.java:406)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2400)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:122)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:781)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.xtext.service.MethodBasedModule.invokeMethod(MethodBasedModule.java:137)
+	... 58 more
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/xtext/xbase/annotations/validation/UnresolvedAnnotationTypeAwareMessageProducer
+	at org.eclipse.fx.ide.fxgraph.AbstractFXGraphRuntimeModule.bindILinkingDiagnosticMessageProvider(AbstractFXGraphRuntimeModule.java:274)
+	... 63 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.xtext.xbase.annotations.validation.UnresolvedAnnotationTypeAwareMessageProducer cannot be found by org.eclipse.fx.ide.fxgraph_1.2.0.201501301049
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 64 more
+
+!ENTRY org.apache.log4j 4 0 2024-07-07 20:29:57.955
+!MESSAGE org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator  - Failed to create injector for org.eclipse.fx.ide.fxgraph.FXGraph
+
+
+!ENTRY org.apache.log4j 4 0 2024-07-07 20:29:58.180
+!MESSAGE org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator  - Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for EclipseSourceFolderProvider was bound.
+
+Requested by:
+1  : XbaseHoverDocumentationProvider.sourceFolderProvider(XbaseHoverDocumentationProvider.java:89)
+      \_ for field sourceFolderProvider
+     at MethodBasedModule.configure(MethodBasedModule.java:58)
+      \_ installed by: Modules$OverrideModule -> FXGraphUiModule
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+1 error
+
+======================
+Full classname legend:
+======================
+EclipseSourceFolderProvider:     "org.eclipse.xtext.builder.EclipseSourceFolderProvider"
+FXGraphUiModule:                 "org.eclipse.fx.ide.fxgraph.ui.FXGraphUiModule"
+MethodBasedModule:               "org.eclipse.xtext.service.MethodBasedModule"
+Modules$OverrideModule:          "com.google.inject.util.Modules$OverrideModule"
+XbaseHoverDocumentationProvider: "org.eclipse.xtext.xbase.ui.hover.XbaseHoverDocumentationProvider"
+========================
+End of classname legend:
+========================
+
+
+!STACK 0
+com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for EclipseSourceFolderProvider was bound.
+
+Requested by:
+1  : XbaseHoverDocumentationProvider.sourceFolderProvider(XbaseHoverDocumentationProvider.java:89)
+      \_ for field sourceFolderProvider
+     at MethodBasedModule.configure(MethodBasedModule.java:58)
+      \_ installed by: Modules$OverrideModule -> FXGraphUiModule
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+1 error
+
+======================
+Full classname legend:
+======================
+EclipseSourceFolderProvider:     "org.eclipse.xtext.builder.EclipseSourceFolderProvider"
+FXGraphUiModule:                 "org.eclipse.fx.ide.fxgraph.ui.FXGraphUiModule"
+MethodBasedModule:               "org.eclipse.xtext.service.MethodBasedModule"
+Modules$OverrideModule:          "com.google.inject.util.Modules$OverrideModule"
+XbaseHoverDocumentationProvider: "org.eclipse.xtext.xbase.ui.hover.XbaseHoverDocumentationProvider"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:568)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:163)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.createInjector(FXGraphActivator.java:67)
+	at org.eclipse.fx.ide.fxgraph.ui.internal.FXGraphActivator.getInjector(FXGraphActivator.java:55)
+	at org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory.getInjector(FXGraphExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:54)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:265)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.initDelegate(RegistryBuilderParticipant.java:185)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:176)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.getDelegate(RegistryBuilderParticipant.java:171)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$DeferredBuilderParticipant.build(RegistryBuilderParticipant.java:164)
+	at org.eclipse.xtext.builder.impl.RegistryBuilderParticipant.build(RegistryBuilderParticipant.java:70)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.doBuild(XtextBuilder.java:525)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.addInfosFromTaskAndBuild(XtextBuilder.java:455)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.fullBuild(XtextBuilder.java:562)
+	at org.eclipse.xtext.builder.impl.XtextBuilder.build(XtextBuilder.java:333)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:354)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:616)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:571)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:609)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:121)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.lambda$0(LaunchConfigurationDelegate.java:406)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2400)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:412)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:122)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:781)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.apache.log4j 4 0 2024-07-07 20:29:58.200
+!MESSAGE org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$BuilderParticipantReader  - Plugin org.eclipse.fx.ide.fxgraph.ui, extension org.eclipse.xtext.builder.participant
+
+
+!ENTRY org.apache.log4j 4 0 2024-07-07 20:29:58.206
+!MESSAGE org.eclipse.xtext.builder.impl.RegistryBuilderParticipant$BuilderParticipantReader  - Failed to create injector for org.eclipse.fx.ide.fxgraph.FXGraph (occurred in org.eclipse.fx.ide.fxgraph.ui.FXGraphExecutableExtensionFactory)
+
+!SESSION 2024-07-16 01:17:58.098 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-16 01:18:01.582
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.fx.ide.java6 4 0 2024-07-16 01:18:02.863
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.java6 [474]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version>=1.3)(!(version>=1.8)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY ch.qos.logback.classic 1 0 2024-07-16 01:18:09.229
+!MESSAGE Logback config file: C:\Users\HP\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-07-16 01:18:24.723
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-07-16 01:18:24.723
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-07-16 01:18:24.723
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-07-16 01:18:32.119
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
